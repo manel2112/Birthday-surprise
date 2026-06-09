@@ -192,6 +192,11 @@
 
 <body>
 
+<!-- 🎵 AUDIO (مخفي) -->
+<video id="voice" style="display:none">
+    <source src="voice.mp4" type="video/mp4">
+</video>
+
     <!-- WELCOME -->
 
     <div id="welcome" class="screen">
@@ -294,6 +299,9 @@
 
                     clearInterval(timer);
 
+                    // 🎵 تشغيل الصوت هنا بعد YES
+                    document.getElementById("voice").play();
+
                     document.getElementById("count")
                         .classList.add("hidden");
 
@@ -370,6 +378,7 @@
 إن شاء الله تحقق كل اللي تتمناه وترجع لأهلك بخير وسلامة 🤲🏻💜
 
 عيد ميلاد سعيد يا كتكوتي 🐣💙🎂`;
+
             let i = 0;
 
             let typing = setInterval(() => {
